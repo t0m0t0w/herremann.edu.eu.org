@@ -38,8 +38,12 @@ p a:active {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-gap: 20px;
-  grid-auto-flow: dense;
+  grid-template-areas:
+    "a a b"
+    "a a b"
+    "c c c";
 }
 
 .grid-item {
@@ -53,6 +57,19 @@ p a:active {
   height: auto;
   object-fit: cover;
   cursor: pointer;
+}
+
+.grid-item:nth-child(1) {
+  grid-area: a;
+}
+
+.grid-item:nth-child(2),
+.grid-item:nth-child(3) {
+  grid-area: b;
+}
+
+.grid-item:nth-child(4) {
+  grid-area: c;
 }
 
 .enlarged {
