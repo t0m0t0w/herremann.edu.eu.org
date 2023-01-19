@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.lineheight1em {
+  line-height: 1em;
+}
+
 body {
   background-color: #333333;
   color: #ffffff;
