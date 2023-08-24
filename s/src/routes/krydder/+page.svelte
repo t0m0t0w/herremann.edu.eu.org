@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href="style.css">
-<head>
+<svelte:head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +12,48 @@
 
   gtag('config', 'G-WYMPR3XD1M');
 </script>
-</head>
+</svelte:head>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  margin: 50px;
+  padding: 25px;
+}
+
+p {
+  font-family: 'Monstserrat', sans-serif;
+  margin-top: -50px;
+  padding-left: 75px;
+}
+
+p a:link {
+  color: lightgray;
+}
+
+p a:visited {
+  color: lightgray;
+}
+
+p a:hover {
+  color: darkgray;
+}
+
+p a:active {
+  color: gray;
+}
+
+</style>
+
 <body>
     <h1>krydderbot</h1>
     <p>jeg er den kule krydderbot fyren.
@@ -28,4 +66,3 @@
         <br>jeg betaler også for krydderbot fra min egen lille tomme lommebok så hvis du har lyst til å hjelpe meg er det bare å sende en melding på discord.
         <br>det var alt jeg hadde lyst til å si. kos deg med litt krydder.</p>
 </body>
-</html>
