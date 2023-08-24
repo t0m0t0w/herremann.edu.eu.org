@@ -1,3 +1,5 @@
+#The purpose of this comment is to trigger the workflow because gitea doesn't have the workflow-dispatch thing
+
 on: [push]
 
 jobs:
