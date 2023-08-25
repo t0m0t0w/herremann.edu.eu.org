@@ -28,4 +28,4 @@ jobs:
           apiToken: ${{ secrets.cf_api_key }}
           accountId: ebad2671db1d8cc9a633d63adb59dd02
           projectName: herremann-er-tilbake-hann
-          directory: ./svelte-kit/cloudflare
+          directory: ./.svelte-kit/cloudflare
