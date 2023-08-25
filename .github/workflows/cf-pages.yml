@@ -1,5 +1,3 @@
-#The purpose of this comment is to trigger the workflow because gitea doesn't have the workflow-dispatch thing
-
 on: [push]
 
 jobs:
@@ -13,7 +11,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      # Run a build step here if your project requires
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 19
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
@@ -21,4 +28,4 @@ jobs:
           apiToken: ${{ secrets.cf_api_key }}
           accountId: ebad2671db1d8cc9a633d63adb59dd02
           projectName: herremann-er-tilbake-hann
-          directory: .
+          directory: ./svelte-kit/cloudflare
