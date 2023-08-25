@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>herremann er kul hann</title>
   <link rel="icon" type="image/x-icon" href="favicon.png" />
-  <link rel="stylesheet" href="style.css" Type="text/css" media="all" />
+  <link rel="stylesheet" href="/styles/style.css" Type="text/css" media="all" />
   <script src="index.js"></script>
   <script
     async
