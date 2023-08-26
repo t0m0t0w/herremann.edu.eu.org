@@ -3,7 +3,7 @@
 on:
   push:
     branches:
-      - svelte
+      - main
 
 jobs:
   publish:
@@ -34,4 +34,4 @@ jobs:
           accountId: ebad2671db1d8cc9a633d63adb59dd02
           projectName: herremann-er-tilbake-hann
           directory: ./.svelte-kit/cloudflare
-          branch: svelte
+          branch: main
