@@ -2,6 +2,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="/favicon.png" />
+  <link rel="stylesheet" href="/styles/404style.css" type="text/css">
   <title>404</title>
   <script
     async
@@ -19,8 +21,6 @@
 </svelte:head>
 
 <body>
-  <h1>404</h1>
-  <h2>oisann her gikk det noe galt.</h2>
-  <h4><a href<a href="/">gå til hjem siden.</a></h4>
-  <img src="https://herremann.ga/sadbanana.png" alt="sad banana" />
+  <h1><a href="/">gå til hjem siden.</a></h1>
+    <img src="https://http.cat/images/404.jpg" alt="where the cat go?" class="center"/>
 </body>

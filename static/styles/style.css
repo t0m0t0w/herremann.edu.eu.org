@@ -48,3 +48,19 @@ p a:hover {
 p a:active {
   color: gray;
 }
+
+h1 a:link {
+  color: lightgray;
+}
+
+h1 a:visited {
+  color: lightgray;
+}
+
+h1 a:hover {
+  color: darkgray;
+}
+
+h1 a:active {
+  color: gray;
+}
