@@ -21,6 +21,6 @@
 </svelte:head>
 
 <body>
-  <h1><a href="/">gå til hjem siden.</a></h1>
+  <h1><a href="/">gå til hjem siden</a></h1>
     <img src="https://http.cat/images/404.jpg" alt="where the cat go?" class="center"/>
 </body>
