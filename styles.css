@@ -1,0 +1,446 @@
+:root {
+    --color-bg: #0d1117;
+    --color-bg-accent: #161b22;
+    --color-text: #c9d1d9;
+    --color-text-accent: #8b949e;
+    --color-border: #30363d;
+    --color-link: #58a6ff;
+    --color-link-hover: #79b8ff;
+    --color-btn-text: #ffffff;
+    --color-btn-hover: #1f6feb;
+    --color-shadow: rgba(0, 0, 0, 0.3);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-bg);
+}
+
+a {
+    color: var(--color-link);
+}
+
+a:hover {
+    color: var(--color-link-hover);
+}
+
+.header {
+    display: flex;
+    align-items: normal;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--color-bg-accent);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.header-image {
+    max-width: 50%;
+    height: auto;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+.scrolling-header {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    background-color: var(--color-shadow);
+}
+
+.scrolling-header span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 10s linear infinite;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 10vw;
+    color: var(--color-text);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.headertekst {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 4vw;
+    color: var(--color-text);
+    margin-left: 4vw;
+}
+
+.headertekst2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 4vw;
+    color: var(--color-text);
+    margin-left: 4vw;
+    margin-top: -1vh;
+}
+
+.breakup {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 5vw;
+    color: var(--color-text);
+    margin-left: 2.2vw;
+}
+
+.post {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 3vh;
+    background-color: var(--color-bg-accent);
+}
+
+.postbilde {
+    width: 100%;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+.posttekst {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    font-size: 4vw;
+    color: var(--color-text);
+    margin: 5%;
+}
+
+.postknapp {
+    display: inline-block;
+    background-color: var(--color-btn-hover);
+    border: none;
+    padding: 1vw 2vw;
+    margin: 5%;
+    margin-top: 0%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Ensure no underline */
+}
+
+.postknapp:hover {
+    background-color: var(--color-link);
+}
+
+.postknapptekst {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 4vw;
+    color: var(--color-btn-text);
+    text-decoration: none;
+}
+
+.postknapptekst:hover {
+    color: var(--color-btn-text);
+}
+
+/* Timeline Styles */
+.timeline {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 3vh;
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--color-border);
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4vh;
+    position: relative;
+    align-items: flex-start;
+    margin-left: 0;
+}
+
+.timeline-date {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3vw;
+    color: var(--color-link);
+    min-width: 120px;
+    margin-bottom: 2vh;
+    text-align: left;
+    position: relative;
+    margin-left: 20px;
+}
+
+.timeline-date::before {
+    content: '';
+    position: absolute;
+    left: -31px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-link);
+    border-radius: 50%;
+}
+
+.timeline-content {
+    background-color: var(--color-bg-accent);
+    padding: 3vw;
+    border-radius: 8px;
+    flex: 1;
+    border: 1px solid var(--color-border);
+    position: relative;
+    margin-left: 20px;
+}
+
+.timeline-title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 4vw;
+    color: var(--color-text);
+    margin: 0 0 2vh 0;
+}
+
+.timeline-description {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 3.5vw;
+    color: var(--color-text-accent);
+    margin: 0 0 2vh 0;
+    line-height: 1.4;
+}
+
+.timeline-price {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3vw;
+    color: var(--color-link);
+    background-color: var(--color-bg);
+    padding: 1vw 2vw;
+    border-radius: 20px;
+    display: inline-block;
+    border: 1px solid var(--color-border);
+}
+
+/* Responsive adjustments for timeline */
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 60px;
+    }
+    
+    .timeline-date {
+        font-size: 5vw;
+        margin-left: 20px;
+    }
+    
+    .timeline-date::before {
+        left: -51px;
+    }
+    
+    .timeline-content {
+        margin-left: 20px;
+    }
+    
+    .timeline-title {
+        font-size: 6vw;
+    }
+    
+    .timeline-description {
+        font-size: 5vw;
+    }
+    
+    .timeline-price {
+        font-size: 4.5vw;
+    }
+}
+
+/* Desktop optimizations (1024px and up) */
+@media (min-width: 1024px) {
+    .header {
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Keep original header text sizes for desktop */
+    .headertekst {
+        font-size: 4vw;
+        margin-left: 4vw;
+    }
+    
+    .headertekst2 {
+        font-size: 4vw;
+        margin-left: 4vw;
+        margin-top: -1vh;
+    }
+    
+    .breakup {
+        font-size: 5vw;
+        margin-left: 2.2vw;
+    }
+    
+    /* Side by side projects on desktop */
+    .projects-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 3vh;
+    }
+    
+    .post {
+        width: 100%;
+        margin: 0;
+    }
+    
+    /* Bigger text for projects on desktop */
+    .posttekst {
+        font-size: 2.5vw;
+    }
+    
+    .postknapptekst {
+        font-size: 2.5vw;
+    }
+    
+    /* Bigger timeline text on desktop */
+    .timeline-date {
+        font-size: 2vw;
+    }
+    
+    .timeline-content {
+        padding: 2vw;
+    }
+    
+    .timeline-title {
+        font-size: 2.5vw;
+    }
+    
+    .timeline-description {
+        font-size: 2vw;
+        line-height: 1.4;
+    }
+    
+    .timeline-price {
+        font-size: 1.8vw;
+        padding: 1vw 2vw;
+    }
+}
+
+/* Tablet range to prevent blank space issues */
+@media (min-width: 769px) and (max-width: 1023px) {
+    .projects-container {
+        display: block;
+    }
+    
+    .post {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 3vh;
+    }
+}
+
+/* Mobile optimizations (767px and below) */
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .header-content {
+        width: 100%;
+        order: 1;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .header-image {
+        max-width: 100%;
+        order: 2;
+        margin-top: 2rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .headertekst, .headertekst2 {
+        text-align: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 6vw;
+        padding: 0;
+    }
+    
+    .headertekst2 {
+        margin-top: -1vh;
+    }
+    
+    .breakup {
+        font-size: 7vw;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 0;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+}
+
+/* Tablet adjustments to prevent excessive padding */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header {
+        align-items: center;
+    }
+    
+    .header-content {
+        width: 50%;
+    }
+    
+    .header-image {
+        max-width: 50%;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+    
+    .headertekst {
+        margin-left: 2rem;
+        font-size: 3rem;
+    }
+    
+    .headertekst2 {
+        margin-left: 2rem;
+        font-size: 3rem;
+        margin-top: -1vh;
+    }
+    
+    .breakup {
+        font-size: 3.5rem;
+        margin-left: 1.5rem;
+    }
+}
