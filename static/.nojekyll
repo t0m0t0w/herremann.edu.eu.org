@@ -1,0 +1,2 @@
+# .nojekyll filen forteller GitHub Pages å ikke bruke Jekyll
+# Dette er viktig for at SvelteKit skal fungere riktig

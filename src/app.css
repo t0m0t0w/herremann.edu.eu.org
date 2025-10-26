@@ -1,0 +1,153 @@
+/* ===================================
+   GLOBALE VARIABLER
+   =================================== */
+:root {
+  --color-bg: #0d1117;
+  --color-bg-accent: #161b22;
+  --color-text: #c9d1d9;
+  --color-text-accent: #8b949e;
+  --color-border: #30363d;
+  --color-link: #58a6ff;
+  --color-link-hover: #79b8ff;
+  --color-btn-text: #ffffff;
+  --color-btn-hover: #1f6feb;
+  --color-shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* ===================================
+   GLOBALE RESET & BASE STILER
+   =================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  overflow-x: hidden;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: var(--color-text);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* ===================================
+   GLOBALE LENKE-STILER
+   =================================== */
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+/* ===================================
+   DELTE KOMPONENTER (brukt på flere sider)
+   =================================== */
+
+/* Header (brukt i blogg og potensielt andre sider) */
+.header {
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--color-bg-accent);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.headertekst {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-size: 4vw;
+  color: var(--color-text);
+  margin-left: 4vw;
+}
+
+/* Post-kort (brukt i blogg) */
+.post {
+  width: 95%;
+  margin: 3vh auto 0;
+  background-color: var(--color-bg-accent);
+  box-sizing: border-box;
+}
+
+.posttekst {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+  font-size: 4vw;
+  color: var(--color-text);
+  margin: 5%;
+}
+
+.postknapp {
+  display: inline-block;
+  background-color: var(--color-btn-hover);
+  border: none;
+  padding: 1vw 2vw;
+  margin: 5%;
+  margin-top: 0%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.postknapp:hover {
+  background-color: var(--color-link);
+}
+
+.postknapptekst {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 4vw;
+  color: var(--color-btn-text);
+  text-decoration: none;
+}
+
+.postknapptekst:hover {
+  color: var(--color-btn-text);
+}
+
+/* ===================================
+   RESPONSIVE STILER FOR DELTE KOMPONENTER
+   =================================== */
+@media (min-width: 1024px) {
+  .header {
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .headertekst {
+    font-size: 4vw;
+    margin-left: 4vw;
+  }
+}
